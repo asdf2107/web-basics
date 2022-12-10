@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Лабораторна робота 5">
+  <meta name="keywords" content="HTML, WEB, лабораторна, Цасюк">
+  <title>Цасюк І.Т. ІП-94</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="half">
+      <form action="">
+        <input type="text" name="name" placeholder="Ім'я" required="true" pattern="^[А-ЯҐЄІЇ'а-яієїґ]+ ([А-ЯҐЄІЇ]\.){2}$">
+        <input type="text" name="variant" placeholder="Варіант" required="true" pattern="^\d\d$">
+        <input type="text" name="group" placeholder="Група" required="true" pattern="^[А-ЯҐЄІЇ]{2}-\d\d$">
+        <input type="text" name="phone" placeholder="Телефон" required="true" pattern="^\(\d{3}\)-\d{3}-\d\d-\d\d$">
+        <input type="text" name="id-card" placeholder="ID-картка" required="true" pattern="^[А-ЯҐЄІЇ]{2} №\d{6}$">
+        <input type="submit" value="Підтвердити">
+      </form>
+    </div>
+    <div class="half">
+      <input type="color" id="color-picker">
+      <table id="color-table"></table>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>

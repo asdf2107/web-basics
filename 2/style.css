@@ -1,0 +1,73 @@
+:root {
+  --light-size: 90px;
+  --border-width: 4px;
+  --middle: calc(50% - var(--light-size) / 2 - var(--border-width));
+}
+
+.trafficlight {
+  width: 150px;
+  height: 400px;
+  border: var(--border-width) solid black;
+  border-radius: 40px;
+  background: rgb(184, 184, 184);
+  position: relative;
+}
+
+.redlight, .yellowlight, .greenlight {
+  width: var(--light-size);
+  height: var(--light-size);
+  position: absolute;
+  left: var(--middle);
+  border: var(--border-width) solid black;
+  border-radius: 50%;
+  background: white;
+}
+
+.redlight {
+  top: 30px;
+  background: red;
+}
+
+.yellowlight {
+  top: var(--middle);
+  background: yellow;
+}
+
+.greenlight {
+  bottom: 30px;
+  background: green;
+}
+
+.trafficlight2 {
+  width: 150px;
+  height: 400px;
+  border: var(--border-width) solid black;
+  border-radius: 40px;
+  background: rgb(184, 184, 184);
+  position: relative;
+  transform: translate(300px, -408px);
+}
+
+.redlight2, .yellowlight2, .greenlight2 {
+  width: var(--light-size);
+  height: var(--light-size);
+  position: relative;
+  border: var(--border-width) solid black;
+  border-radius: 50%;
+  background: white;
+}
+
+.redlight2 {
+  transform: translate(28px, 30px);
+  background: red;
+}
+
+.yellowlight2 {
+  transform: translate(28px, 56px);
+  background: yellow;
+}
+
+.greenlight2 {
+  transform: translate(28px, 80px);
+  background: green;
+}

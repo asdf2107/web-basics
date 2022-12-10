@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Лабораторна робота 2">
+  <meta name="keywords" content="HTML, WEB, лабораторна, Цасюк">
+  <title>Цасюк І.Т. ІП-94</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <table>
+    <tr class="first">
+      <td colspan="2" rowspan="2">Цасюк</td>
+      <td></td>
+      <td class="short" rowspan="2">Ілля</td>
+      <td class="short" rowspan="2">Тимурович</td>
+    </tr>
+  
+    <tr class="first">
+      <td></td>
+    </tr>
+  
+    <tr class="second">
+      <td></td>
+      <td rowspan="2">ІП-94</td>
+      <td rowspan="2">Лабораторна 2</td>
+      <td class="short" colspan="2" rowspan="2">Варіант 71</td>
+    </tr>
+
+    <tr class="second">
+      <td></td>
+    </tr>
+  </table>
+  
+  <div class="trafficlight">
+    <div class="redlight"></div>
+    <div class="yellowlight"></div>
+    <div class="greenlight"></div>
+  </div>
+
+  <div class="trafficlight2">
+    <div class="redlight2"></div>
+    <div class="yellowlight2"></div>
+    <div class="greenlight2"></div>
+  </div>
+</body>
+<style>
+  :root {
+    --col-width: 12em;
+    --transition: background-color .3s;
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  tr {
+    height: 2em;
+  }
+
+  tr.first td {
+    color: #f2e9e8;
+    background-color: #718F8F;
+    transition: var(--transition);
+  }
+
+  tr.first td:hover {
+    background-color: #8e7070;
+  }
+
+  tr.second td {
+    color: #358e9a;
+    background-color: #F5F571;
+    transition: var(--transition);
+  }
+
+  tr.second td:hover {
+    background-color: #0a0a8e;
+  }
+
+  td {
+    width: var(--col-width);
+    text-align: center;
+  }
+
+  td.short {
+    width: calc(var(--col-width) / 2);
+  }
+</style>
+</html>
